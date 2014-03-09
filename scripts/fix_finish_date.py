@@ -5,9 +5,9 @@ finish dates. The format should be, per line:
     "process_id: (run_id, finish_date)", i.e
     "24-8480: ('130423_SN7001298_0135_AH0A9YADXX', datetime.date(2013, 4, 24))"
 
-As it is going to create two instances of LIMS, one for production and one for
-staging, the credentials will be "deduced" from the only .genologicsrc file
-present in the system.
+WARNING: Run this script with caution! And make sure that the file finish_dates.txt
+is correctly formated and contains the original Finish Run dates before running
+this script in production.
 """
 import datetime
 import logbook
